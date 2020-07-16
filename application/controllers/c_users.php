@@ -24,7 +24,10 @@ class C_users
 
     public function insert($data)
     {
-
+        $user = new M_User($data);
+        $user->name = $data->name;
+        $user->email = $data->email;
+        $user-save();
     }
 
     public function update($data)
