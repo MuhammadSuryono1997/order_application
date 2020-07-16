@@ -14,15 +14,18 @@
 </head>
 
 <body>
-    <!-- <div class="container-fluid">
-        <div class="row bg-primary">
-            <div class="col-12 justify-content-between d-flex py-1">
-                <h2 class="text-light">Order</h2>
-                <button type="button" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i>
-                    Add Items</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div> -->
+    </nav>
 
     <div class="container">
         <div class="row mt-3">
