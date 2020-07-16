@@ -9,7 +9,7 @@
     <div class="container">
         <div class="card" style="box-shadow: 0 7px 12px #888">
             <div class="card-body p-0">
-                <table class="table table-hover table-striped">
+                <table class="table table-hover table-info table-striped">
                     <thead class="text-center">
                         <tr>
                             <th scope="col">No</th>

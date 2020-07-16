@@ -1,8 +1,9 @@
 <?php
-for ($i = 0; $i < 10; $i++) :
+use App\Models\M_Items;
+
     ?>
     <tr>
-        <td><?= $i+1; ?></td>
+        <td></td>
         <td>Tissue</td>
         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi soluta nobis ex cupiditate facilis asperiores nostrum vero. Ducimus amet quidem quisquam ex itaque voluptate ratione iste cumque vero omnis.</td>
         <td>Rp. 30.000</td>
@@ -12,5 +13,4 @@ for ($i = 0; $i < 10; $i++) :
         </td>
     </tr>
 <?php
-endfor;
 ?>

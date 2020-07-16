@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class M_Items extends Model
 {
-    protected $table = 'T_users';
-    protected $guarded = ["id","name","email"];
+    protected $table = 'T_items';
+    protected $guarded = ["id","name","description","price"];
     protected $timestamp = true;
 }
