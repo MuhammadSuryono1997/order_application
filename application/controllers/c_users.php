@@ -16,4 +16,24 @@ class C_users
         // return Response::json(M_User::all());
         return M_User::all();
     }
+
+    public function get_by_id($data)
+    {
+        return M_User::find($data);
+    }
+
+    public function insert($data)
+    {
+
+    }
+
+    public function update($data)
+    {
+
+    }
+
+    public function delete($data)
+    {
+
+    }
 }
