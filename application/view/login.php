@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6" style="margin-top: 80px;margin-left: auto;margin-right:auto">
             <div class="card" style="box-shadow: 0 7px 12px #888">
             <div class="card-body">
             <form>
@@ -20,9 +20,9 @@
                         please fill in your password
                     </div>
                 </div>
-                <div class="form-group text-right">
-                    <button type="submit" class="btn btn-info btn-md btn-icon icon-right" tabindex="4">
-                        Login
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-md btn-icon btn-block icon-right" tabindex="7">
+                        LOGIN
                     </button>
                 </div>
             </form>

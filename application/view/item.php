@@ -1,31 +1,29 @@
-<div class="container-fluid mt-4">
-    <table class="table table-hover table-bordered">
-        <thead>
-            <tr>
-                <th scope="col">No</th>
-                <th scope="col" style="width: 10%;">Name</th>
-                <th scope="col" style="width: 70%;">Description</th>
-                <th scope="col">Price</th>
-                <th scope="col">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            for ($i = 0; $i < 10; $i++) :
-                ?>
-                <tr>
-                    <td><?= $i; ?></td>
-                    <td>Tissue</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi soluta nobis ex cupiditate facilis asperiores nostrum vero. Ducimus amet quidem quisquam ex itaque voluptate ratione iste cumque vero omnis.</td>
-                    <td>Rp. 30.000</td>
-                    <td class="d-flex justify-content-between row-2">
-                        <button class="btn btn-primary mr-2">Edit</button>
-                        <button class="btn btn-danger">Delete</button>
-                    </td>
-                </tr>
-            <?php
-            endfor;
-            ?>
-        </tbody>
-    </table>
+<div class="row mt-5" style="margin-bottom: 20px;">
+    <div class="container">
+        <div class="col-md-4">
+            <button class="btn btn-flat btn-success btn-md">Add New Item</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="card" style="box-shadow: 0 7px 12px #888">
+            <div class="card-body p-0">
+                <table class="table table-hover table-striped">
+                    <thead class="text-center">
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col" style="width: 10%;">Name</th>
+                            <th scope="col" style="width: 70%;">Description</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-items">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
