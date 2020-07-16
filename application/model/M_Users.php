@@ -9,5 +9,4 @@ class M_User extends Model
     protected $table = 'T_users';
     protected $guarded = ["id","name","email"];
     protected $timestamp = true;
-    
 }
