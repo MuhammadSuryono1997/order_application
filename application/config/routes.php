@@ -6,8 +6,7 @@ $uri = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
 $user = new C_users();
 
-if($uri[2] == "")
+if($uri[2] == "login")
 {
-    // var_dump($user->get_all());
-    include(__DIR__.'/../view/dashboard.php');
+    include(__DIR__.'/../view/index.php');
 }
