@@ -8,6 +8,6 @@ $user = new C_users();
 
 if($uri[2] == "")
 {
-    var_dump($user->get_all());
-    // include(__DIR__.'/../view/contoh_hapus_saja.php');
+    // var_dump($user->get_all());
+    include(__DIR__.'/../view/contoh_hapus_saja.php');
 }

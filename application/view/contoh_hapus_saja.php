@@ -8,10 +8,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Judul Bro</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <div class="row">
+            <table class="table table-hover border">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Item</th>
+                        <th>Deskripsi</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
