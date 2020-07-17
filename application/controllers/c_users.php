@@ -15,6 +15,7 @@ class C_users
     {
         // return Response::json(M_User::all());
         return M_User::all();
+        // echo "test";
     }
 
     public function get_by_id($data)
@@ -24,19 +25,23 @@ class C_users
 
     public function insert($data)
     {
-        $user = new M_User($data);
-        $user->name = $data->name;
-        $user->email = $data->email;
-        $user-save();
+        // $user = new M_User($data);
+        // $user->name = $data->name;
+        // $user->email = $data->email;
+        // $user-save();
     }
 
-    public function update($data)
+    public function update($object)
     {
-
+        $user = M_User::find($object);
+        $user->name = $object->name;
+        $user->email = $object->email;
+        $user->save();
     }
 
     public function delete($data)
     {
-
+        $user = M_User::find(1);
+        $user->delete();
     }
 }

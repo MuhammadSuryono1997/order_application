@@ -1,0 +1,35 @@
+<?php
+namespace App\Controllers;
+use App\Models\M_Items;
+class C_Items
+{
+    public function get_all()
+    {
+        return M_Items::all();
+    }
+    public function insert($data)
+    {
+        $items = new M_Items();
+        $items->description = $data->description;
+        $items->name = $data->name;
+        $items->price = $data->price;
+        // $items->save();
+        var_dump($items);
+        return $items;
+    }
+    public function update($data)
+    {
+    }
+    public function delete($id)
+    {
+        $data = M_Items::find($id);
+        $data->delete();
+        return $data;
+    }
+    public function get_update($id)
+    {
+        $data = M_Items::find($id);
+        return $data;
+    }
+}
+?>
