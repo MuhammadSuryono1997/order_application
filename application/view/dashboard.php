@@ -7,7 +7,7 @@
                         <img class="mx-auto d-block" src="https://img.icons8.com/cotton/128/000000/user-male--v1.png" />
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-info btn-xs btn-block">User</button>
+                        <a href="http://localhost/illuminate_php/index.php/users" class="btn btn-info btn-xs btn-block">User</a>
 
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                         <img class="mx-auto d-block" src="https://img.icons8.com/cute-clipart/64/000000/purchase-order.png" />
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-info btn-xs btn-block">Orders</button>
+                        <a href="http://localhost/illuminate_php/index.php/orders" class="btn btn-info btn-xs btn-block">Orders</a>
 
                     </div>
                 </div>
