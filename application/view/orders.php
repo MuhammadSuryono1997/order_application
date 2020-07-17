@@ -26,7 +26,14 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <select name="" id="">
+
                                 <option>Pilih Items</option>
+                                <?php 
+                                    foreach ($data as $item) 
+                                    {
+                                        echo "<option value='".$item->id."'>".$item->name."</option>";
+                                    }
+                                ?>
                             </select>
                         </div>
                     </div>

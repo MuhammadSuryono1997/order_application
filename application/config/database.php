@@ -11,9 +11,9 @@ $db = new Capsule();
 $db->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'db_orders',
-    'username'  => 'yono',
-    'password'  => 'MamangSekayu.97',
+    'database'  => 'orders',
+    'username'  => 'root',
+    'password'  => '',
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',

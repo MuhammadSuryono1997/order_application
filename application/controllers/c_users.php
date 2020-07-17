@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\M_User;
 // use Illuminate\Support\Facades\Response;
 
@@ -13,8 +14,8 @@ class C_users
 
     public function get_all()
     {
+
         return M_User::all();
-        // echo "test";
     }
 
     public function get_by_id($data)
@@ -27,23 +28,26 @@ class C_users
         $user = new M_User();
         $user->name = $data->name;
         $user->email = $data->email;
-        $user-save();
-
+        $idUser = $user->id;
+        $user->save();
+        $this->get_by_id($idUser);
         return $user;
     }
 
     public function update($object)
     {
-        $user = M_User::find($id);
+        $user = M_User::find($object->id);
         $user->name = $object->name;
         $user->email = $object->email;
-        return $user->save();
-        // return $user;
+        $user->save();
+        return $user;
     }
 
-    public function delete($data)
+    public function delete($id)
     {
-        $user = M_User::find($data);
+        $user = M_User::find($id);
         $user->delete();
+
+        return $user;
     }
 }

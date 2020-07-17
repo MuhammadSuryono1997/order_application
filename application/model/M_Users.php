@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Models;
+
 use Illuminate\Database\Eloquent\Model;
 
 
 class M_User extends Model
 {
-    protected $table = 'T_users';
-    protected $guarded = ["id","name","email"];
-    // protected $timestamp = true;
+    protected $table = 'users';
+    protected $guarded = ['id'];
+    protected $fillable = ['id', 'name', 'email'];
+    public $timestamps = false;
 }

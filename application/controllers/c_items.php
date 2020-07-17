@@ -14,8 +14,8 @@ class C_Items
         $items->description = $object->description;
         $items->name = $object->name;
         $items->price = $object->price;
-        $items->save();
-        // var_dump($items);
+        // $items->save();
+        var_dump($items);
 
         return $items;
 
@@ -23,7 +23,7 @@ class C_Items
 
     public function update($object)
     {
-        $user = M_Items::find($id);
+        $user = M_Items::find($object->id);
         $user->name = $object->name;
         $user->email = $object->email;
         return $user->save();
@@ -44,6 +44,3 @@ class C_Items
         return $data;
     }
 }
-
-
-?>
