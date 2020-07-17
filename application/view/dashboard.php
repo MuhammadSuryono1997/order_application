@@ -1,17 +1,4 @@
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
         <div class="row mt-3">
             <div class="col-md-4">
@@ -20,7 +7,7 @@
                         <img class="mx-auto d-block" src="https://img.icons8.com/cotton/128/000000/user-male--v1.png" />
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-info btn-xs btn-block">User</button>
+                        <a href="http://localhost/illuminate_php/index.php/users" class="btn btn-info btn-xs btn-block">User</a>
 
                     </div>
                 </div>
@@ -31,7 +18,7 @@
                         <img class="mx-auto d-block" src="https://img.icons8.com/cute-clipart/64/000000/purchase-order.png" />
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-info btn-xs btn-block">Orders</button>
+                        <a href="http://localhost/illuminate_php/index.php/orders" class="btn btn-info btn-xs btn-block">Orders</a>
 
                     </div>
                 </div>
@@ -42,7 +29,7 @@
                         <img class="mx-auto d-block" src="https://img.icons8.com/dusk/64/000000/list.png" />
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-info btn-xs btn-block">Items</button>
+                        <a href="http://localhost/illuminate_php/index.php/items" class="btn btn-info btn-xs btn-block">Items</a>
 
                     </div>
                 </div>
