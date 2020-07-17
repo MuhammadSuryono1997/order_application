@@ -18,7 +18,7 @@
                         <img class="mx-auto d-block" src="https://img.icons8.com/cute-clipart/64/000000/purchase-order.png" />
                     </div>
                     <div class="card-footer">
-                        <a href="http://localhost/illuminate_php/index.php/orders" class="btn btn-info btn-xs btn-block">Orders</a>
+                        <a href="http://localhost/illuminate_php/index.php/orders/generate-kode" class="btn btn-info btn-xs btn-block">Orders</a>
 
                     </div>
                 </div>

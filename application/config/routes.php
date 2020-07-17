@@ -1,5 +1,5 @@
 <?php
-// error_reporting(0);
+error_reporting(0);
 session_start();
 
 // use ___PHPSTORM_HELPERS\object;
@@ -9,7 +9,6 @@ use App\Controllers\C_Items;
 $user = new C_users();
 $item = new C_Items();
 $uri = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-
 
 if ($uri[3] == "login") {
     $view = 'login';
@@ -22,7 +21,7 @@ if ($uri[3] == "login") {
         $view = 'item';
         include(__DIR__ . '/../view/index.php');
     } elseif ($uri[4] == "delete") {
-        // C_Items::delete($uri[5]);
+        $item->delete($uri[5]);
         header('location:http://localhost/illuminate_php/index.php/items');
     }
 } elseif ($uri[3] == 'form-items') {
@@ -31,7 +30,7 @@ if ($uri[3] == "login") {
         include(__DIR__ . '/../view/index.php');
     } else {
         if ($uri[4] != 'action') {
-            $data = $user->get_update($uri[4]);
+            $data = $item->get_update($uri[4]);
             $view = 'form_items';
             if (count($data) > 0) {
                 $items_name = $data->name;
@@ -42,7 +41,9 @@ if ($uri[3] == "login") {
         } elseif ($uri[4] == 'action') {
             if ($_POST['id'] == "") {
                 $item->insert((object)['name' => $_POST['name'], 'description' => $_POST['deskripsi'], 'price' => $_POST['price']]);
-                // C_Items::insert((object)['name' => $_POST['name'], 'description' => $_POST['deskripsi'], 'price' => $_POST['price']]);
+                header('location:http://localhost/illuminate_php/index.php/items');
+            }elseif($_POST['id'] != ""){
+                $item->update((object)['name' => $_POST['name'], 'description' => $_POST['deskripsi'], 'price' => $_POST['price'], 'id'=>$_POST['id']]);
                 header('location:http://localhost/illuminate_php/index.php/items');
             }
         }
@@ -80,8 +81,16 @@ if ($uri[3] == "login") {
             }
         }
     }
-} elseif ($uri[3] == 'orders') {
+} elseif ($uri[3] == 'orders') 
+{
+    $id_customer = "kode".time();
+    $id_customer = hash('md5', $id_customer);
+    if($uri[4]=="generate-kode")
+    {
+        header('location:http://localhost/illuminate_php/index.php/orders/'.$id_customer);
+    }
     $view = 'orders';
     $data = $item->get_all();
+    $user = $user->get_all();
     include(__DIR__ . '/../view/index.php');
 }

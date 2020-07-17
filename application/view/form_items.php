@@ -22,8 +22,8 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="email">Harga Items</label>
-                <input type="text" class="form-control" name="price" tabindex="1" required autofocus value="<?=$items_price;?>" />
+                <label for="harga">Harga Items</label>
+                <input type="text" id="harga" class="form-control" name="price" tabindex="1" required autofocus value="<?=$items_price;?>" />
                 <div class="invalid-feedback">
                     Please fill in your email
                 </div>

@@ -12,14 +12,14 @@
                     <form action="http://localhost/illuminate_php/index.php/form-users/action" method="POST">
                         <div class="form-group">
                             <input name='id' value="<?= $data->id; ?>" type='hidden' />
-                            <label for="email">Nama Items</label>
+                            <label for="email">Nama User</label>
                             <input id="email" type="text" class="form-control" name="name" tabindex="1" required autofocus value="<?= $items_name; ?>" />
                             <div class="invalid-feedback">
-                                Please fill in your email
+                                Please fill in your name
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Harga Items</label>
+                            <label for="email">Email</label>
                             <input type="email" class="form-control" name="email" tabindex="1" required autofocus value="<?= $items_email; ?>" />
                             <div class="invalid-feedback">
                                 Please fill in your email
